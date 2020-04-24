@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
+	
+# Wifi
+PRODUCT_PACKAGES += \
+    PlatinaWifiOverlay
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
