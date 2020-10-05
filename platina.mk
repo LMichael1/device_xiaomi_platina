@@ -37,17 +37,13 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
+    $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
+    $(LOCAL_PATH)/audio/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
-
-# Haters gonna hate..
-PRODUCT_CHARACTERISTICS := nosdcard
 
 # HW crypto
 PRODUCT_PACKAGES += \
@@ -55,7 +51,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.device.rc
+    init.device.rc \
+    fstab.qcom
 
 # Power
 PRODUCT_COPY_FILES += \
@@ -73,4 +70,4 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)

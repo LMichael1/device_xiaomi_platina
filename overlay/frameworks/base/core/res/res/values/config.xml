@@ -700,4 +700,11 @@
 
     <!-- Should we filter any display modes which are unampped? -->
     <bool name="config_filterDisplayModes">true</bool>
+	
+	<integer name="config_num_physical_slots">2</integer>
+	
+	<item name="config_screenAspectRatio" format="float" type="dimen">2.1</item>
+	
+	<!-- Whether device has a physical display cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
 </resources>

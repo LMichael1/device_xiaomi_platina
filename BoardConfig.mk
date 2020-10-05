@@ -25,23 +25,29 @@
 # Inherit from sdm660-common
 include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
-WAYNE_PATH := device/xiaomi/wayne-common
+PLATINA_PATH := device/xiaomi/platina
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Display
-TARGET_SCREEN_DENSITY := 400
+TARGET_SCREEN_DENSITY := 392
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(WAYNE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(PLATINA_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := wayne_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/platina
+TARGET_KERNEL_CONFIG := platina_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
+KERNEL_TOOLCHAIN := $(PWD)/compiler/bin/
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 
 # Inherit the proprietary files
-include vendor/xiaomi/wayne-common/BoardConfigVendor.mk
+include vendor/xiaomi/platina/BoardConfigVendor.mk
+
+# Vendor Security patch level
+VENDOR_SECURITY_PATCH := 2020-04-05
