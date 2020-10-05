@@ -23,6 +23,6 @@ fi
 set -e
 
 export DEVICE_COMMON=sdm660-common
-export DEVICE_SPECIFIED_COMMON_DEVICE="jasmine_sprout wayne"
+export DEVICE_SPECIFIED_COMMON_DEVICE="platina"
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

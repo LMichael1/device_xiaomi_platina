@@ -1,8 +1,3 @@
-This repository contains common device configuration for Xiaomi platina device
-
-## Copyright
-
-```
 #
 # Copyright (C) 2018 The LineageOS Project
 #
@@ -17,4 +12,11 @@ This repository contains common device configuration for Xiaomi platina device
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
+
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_platina.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_platina-user \
+    aosp_platina-userdebug \
+    aosp_platina-eng

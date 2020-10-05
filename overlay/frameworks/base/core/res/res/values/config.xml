@@ -139,9 +139,28 @@
                   autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
 
-    <!-- Specify if the fingerprint hardware support gestures-->
-    <bool name="config_fingerprintSupportsGestures">true</bool>
+    <!-- Display mode remapping table.
+         If the mode names returned by the backend do not match
+         the predefined and translated strings in the Settings
+         app, they can be remapped here. The format is
+         "oldname:newname", one per entry. -->
+    <string-array name="config_displayModeMappings" translatable="false">
+        <item>A_standard:standard</item>
+        <item>B_warm:Warm</item>
+        <item>C_normal:Normal</item>
+        <item>D_cold:Cold</item>
+        <item>E_increase:adaptive</item>
+        <item>E_increased:adaptive</item>
+        <item>F_default:basic</item>
+    </string-array>
 
-    <!-- Enable system navigation keys. -->
-    <bool name="config_supportSystemNavigationKeys">true</bool>
+    <!-- Should we filter any display modes which are unampped? -->
+    <bool name="config_filterDisplayModes">true</bool>
+	
+	<integer name="config_num_physical_slots">2</integer>
+	
+	<item name="config_screenAspectRatio" format="float" type="dimen">2.1</item>
+	
+	<!-- Whether device has a physical display cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
 </resources>
