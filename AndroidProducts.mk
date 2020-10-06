@@ -14,9 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_platina.mk
+    $(LOCAL_DIR)/lineage_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_platina-user \
-    aosip_platina-userdebug \
-    aosip_platina-eng
+    lineage_platina-user \
+    lineage_platina-userdebug \
+    lineage_platina-eng
+
