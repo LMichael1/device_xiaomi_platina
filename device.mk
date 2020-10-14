@@ -30,6 +30,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Inherit properties
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 
+# Consumerir
+BOARD_HAVE_IR := false
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
