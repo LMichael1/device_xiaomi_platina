@@ -46,6 +46,9 @@ KERNEL_TOOLCHAIN := $(PWD)/compiler/bin/
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(PLATINA_PATH)/rootdir/etc/fstab.qcom
+
 # Inherit the proprietary files
 include vendor/xiaomi/platina/BoardConfigVendor.mk
 
