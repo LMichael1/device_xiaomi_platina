@@ -109,6 +109,7 @@ vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/watermark_font_2300_3199.dat
 vendor/etc/camera/yuv_test.xml
 vendor/lib/hw/camera.sdm660.so
+vendor/lib/camera.sdm660_shim.so
 vendor/lib/libMiCameraHal.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libqomx_core.so
