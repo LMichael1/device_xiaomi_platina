@@ -42,4 +42,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.camera.imglib.usefdlite=1 \
 	persist.vendor.bokeh.switch.lux=290 \
 	persist.vendor.camera.exif.make=Xiaomi \
+	persist.vendor.camera.HAL3.enabled=1 \
 	vendor.camera.aux.packagelist=com.android.camera
