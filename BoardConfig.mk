@@ -28,7 +28,7 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 PLATINA_PATH := device/xiaomi/platina
 
 # Display
-TARGET_SCREEN_DENSITY := 392
+TARGET_SCREEN_DENSITY := 440
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(PLATINA_PATH)/manifest.xml
