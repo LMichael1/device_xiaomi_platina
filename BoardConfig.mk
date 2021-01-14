@@ -43,6 +43,9 @@ TARGET_RECOVERY_FSTAB := $(PLATINA_PATH)/rootdir/etc/fstab.qcom
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 
+# Build Rules
+BUILD_BROKEN_DUP_RULES := true
+
 # Inherit the proprietary files
 include vendor/miuicamera/common/BoardConfigVendor.mk
 include vendor/xiaomi/platina/BoardConfigVendor.mk
