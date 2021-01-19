@@ -10,4 +10,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.isp.turbo=1 \
     persist.vendor.camera.linkpreview=0 \
     persist.vendor.camera.preview.ubwc=0 \
-    persist.vendor.camera.stats.test=0
+    persist.vendor.camera.stats.test=0 \
+    vendor.camera.aux.packagelist=com.android.camera
