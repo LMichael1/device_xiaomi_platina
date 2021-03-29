@@ -47,7 +47,6 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 BUILD_BROKEN_DUP_RULES := true
 
 # Inherit the proprietary files
-include vendor/miuicamera/common/BoardConfigVendor.mk
 include vendor/xiaomi/platina/BoardConfigVendor.mk
 
 # Vendor Security patch level
