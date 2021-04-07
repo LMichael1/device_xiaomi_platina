@@ -39,6 +39,9 @@ TARGET_KERNEL_CONFIG := platina_defconfig
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATINA_PATH)/rootdir/etc/fstab.qcom
 
+# Product properties
+TARGET_PRODUCT_PROP += $(PLATINA_PATH)/product.prop
+
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
