@@ -5,14 +5,19 @@ vendor/firmware/voice_amodel.bin
 vendor/firmware/tfa98xx_aac.cnt
 vendor/firmware/tfa98xx_goer.cnt
 vendor/lib/hw/audio.primary.sdm660.so
+vendor/lib/liba2dpoffload.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
+vendor/lib/libhdmiedid.so
+vendor/lib/libhfp.so
+vendor/lib/libsndmonitor.so
 -vendor/lib/libaudio_log_utils.so
 vendor/lib/libdrc.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib64/hw/audio.primary.sdm660.so
+vendor/lib64/liba2dpoffload.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -22,6 +27,9 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libaudioroute_ext.so
+vendor/lib64/libhdmiedid.so
+vendor/lib64/libhfp.so
+vendor/lib64/libsndmonitor.so
 -vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libqtigef.so
 
